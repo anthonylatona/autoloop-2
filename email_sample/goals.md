@@ -1,4 +1,3 @@
-```markdown
 # Email Optimization Goals
 
 ## What This Document Is
@@ -27,27 +26,12 @@ Score the email on these five dimensions (100 points total):
    Does the email respect the reader's time, or does it ramble? Could it be 40%
    shorter without losing meaning?
 
-4. **Proof & Credibility** (15%) — Are claims backed by specifics? "300% ROI" with no
+4. **Proof & Credibility** (22%) — Are claims backed by specifics? "300% ROI" with no
    source is worse than no stat at all. Score as follows:
-   - Specific evidence (8 points) — Stats must include context (e.g., "1,200+ customers" is good; "saves time" is vague). Case studies, benchmarks, or third-party validation count. Deduct 2 points per unsupported claim.
-   - Low-friction ask (7 points) — Is the ask a 15-min demo or a full product consultation? A quick call beats a long commitment. Deduct 3 points if ask feels heavy.
+   - Specific evidence (12 points) — Stats must include context (e.g., "1,200+ customers" is good; "saves time" is vague). Case studies, benchmarks, or third-party validation count. Deduct 2 points per unsupported claim.
+   - Low-friction ask (10 points) — Is the ask a 15-min demo or a full product consultation? A quick call beats a long commitment. Deduct 3 points if ask feels heavy.
 
-5. **Sender Credibility** (15%) — Is the sender a real human or a faceless brand?
-   Does the signature include name, title, phone, and email? Is there a reason to
-   trust this person? Deduct 3 points if signature is missing or incomplete; deduct 5 points if sender appears to be a bot or generic alias.
-
-## Constraints for the Agent
-- Make exactly ONE improvement per iteration
-- Do not change the product name (SyncFlow) or sender name (Alex Johnson)
-- Do not rewrite the entire email — make a surgical change
-- HTML must remain valid after every change
-- State your hypothesis before making the change
-- Prefer fixing the worst problem over polishing already-good sections
-
-## Constraints for the Meta-Agent
-- Weights must always sum to exactly 100
-- No single criterion may drop below 5 points
-- No single criterion may exceed 60 points
-- Do not add or remove criteria — only reweight or reword them
-- Do not change the fundamental purpose of the document being evaluated
-```
+5. **Sender Credibility** (8%) — Is the sender a real human or a faceless brand?
+   Does the signature include name and email? Is there a reason to trust this person?
+   Deduct 2 points if signature lacks name or email; deduct 4 points if sender appears
+   to be a bot or generic alias. Phone number is a plus but not required.
