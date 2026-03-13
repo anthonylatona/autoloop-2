@@ -21,7 +21,7 @@ from email_sample.evaluator_email import (
     evaluator_postmark_spam,
 )
 
-ARTIFACT_PATH = "email_sample/artifact.html"
+ARTIFACT_PATH = "email_sample/claude_artifact_optimized_bp.html"
 
 # ── Load artifact ──────────────────────────────────────────────────────────────
 
