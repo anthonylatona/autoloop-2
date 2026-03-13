@@ -1,0 +1,22 @@
+# Email evaluators — all local, no API calls, instant scoring.
+# postmark_spam removed: SA scores this test email 98+ every iteration (no signal).
+# email_spam_score covers content-level spam triggers better for this use case.
+
+evaluators:
+  - name: email_spam_score
+    weight: 0.30
+    config:
+      penalty_per_trigger: 6
+      penalty_per_pattern: 4
+
+  - name: email_deliverability
+    weight: 0.25
+
+  - name: email_accessibility
+    weight: 0.15
+
+  - name: email_cta_focus
+    weight: 0.10
+
+  - name: llm_judge
+    weight: 0.20
